@@ -490,7 +490,7 @@ footer > img{
     }
     /*---Skills--->*/
     .skills{
-        height:60vh;
+        height:70vh;
     }
     .skills-grid-container{
         grid-template-columns: repeat(3, 1fr);
