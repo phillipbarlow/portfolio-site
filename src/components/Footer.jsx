@@ -7,9 +7,9 @@ export default function Footer() {
         <img src={mobileLogo} alt="logo"/>
         <nav>
           <ul>
-            <li><NavLink to="/about">About</NavLink></li>
-            <li><NavLink to="/contact">Contact</NavLink></li>
-            <li><NavLink to="/work">Work</NavLink></li>
+            <li><NavLink to="/about" className="footerLink">About</NavLink></li>
+            <li><NavLink to="/contact" className="footerLink">Contact</NavLink></li>
+            <li><NavLink to="/work" className="footerLink">Work</NavLink></li>
           </ul>
         </nav>
         <p className="footer-message">Thanks for scrolling!</p>

@@ -35,6 +35,14 @@ header ul li{
     font-weight:00;
     font-family:sans;
 }
+.link{
+    text-decoration: none;
+    color:#111;
+}
+.footerLink{
+    text-decoration: none;
+    color:#e8e5e5;
+}
 .menu-toggle{
     display:none;
 }
@@ -422,6 +430,14 @@ footer > img{
         overflow:hidden;
         grid-template-rows:120px;
     }
+    .link{
+    text-decoration: none;
+    color:white;
+    }
+    .footerLink{
+    text-decoration: none;
+    color:#e8e5e5;
+    }
     .hero{
         height:800px;
     }
@@ -467,12 +483,12 @@ footer > img{
     }
     .home-text{
         font-size:4em;
-        top:8%;
+        top:4%;
     }
     .intro-text{
         font-size:0.8em;
         width:60%;
-        top:20%;
+        top:18%;
     }
     .hero{
         z-index:9;
@@ -603,6 +619,14 @@ footer > img{
         overflow-x: hidden;
       }
       /* About */
+      .about-text{
+        font-size:4em;
+        font-weight:700;
+        position:absolute;
+        left:15%;
+        color:white;
+        top:20%;
+      }
       .img-container{
         height:400px;
         width:400px;

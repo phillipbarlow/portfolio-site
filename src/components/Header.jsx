@@ -30,10 +30,10 @@ export default function Header() {
       </NavLink>
       <nav>
         <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-          <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/about">About</NavLink></li>
-          <li><NavLink to="/work">Work</NavLink></li>
-          <li><NavLink to="/Contact">Contact</NavLink></li>
+          <li><NavLink to="/" className="link">Home</NavLink></li>
+          <li><NavLink to="/about" className="link">About</NavLink></li>
+          <li><NavLink to="/work" className="link">Work</NavLink></li>
+          <li><NavLink to="/Contact" className="link">Contact</NavLink></li>
         </ul>
       </nav>
       <button className="menu-toggle" onClick={toggleMenu}>

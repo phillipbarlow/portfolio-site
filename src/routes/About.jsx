@@ -10,7 +10,7 @@ export default function About() {
   return (
     <div className='aboutPage'>
       <Header/>
-      <Hero headerName={'About'} className={'about-hero'}/>
+      <Hero headerName={'About me ..'} className={'about-hero'} headerText={'about-text'}/>
       <section className='about-main'>
         <div className="img-container">
           <img src={profile} alt="Profile of me on beach in Norfolk"/>
