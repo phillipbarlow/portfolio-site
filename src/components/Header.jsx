@@ -1,6 +1,7 @@
 import { useState,useEffect } from 'react';
 import desktopLogo from '../images/desktop-logo.png';
 import mobilePhoneLogo from '../images/mobile-logo.png';
+import Navigation from './Navigation';
 import {NavLink} from "react-router-dom"
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,10 +31,7 @@ export default function Header() {
       </NavLink>
       <nav>
         <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-          <li><NavLink to="/" className="link">Home</NavLink></li>
-          <li><NavLink to="/about" className="link">About</NavLink></li>
-          <li><NavLink to="/work" className="link">Work</NavLink></li>
-          <li><NavLink to="/Contact" className="link">Contact</NavLink></li>
+        <Navigation/>
         </ul>
       </nav>
       <button className="menu-toggle" onClick={toggleMenu}>
