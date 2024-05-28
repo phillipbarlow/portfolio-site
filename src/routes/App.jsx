@@ -21,7 +21,8 @@ import firebase from '../images/firebase.svg';
 import googleVision from '../images/googleVision.png';
 import jira from '../images/jira.svg';
 import Footer from '../components/Footer';
-import Hero from '../components/Hero'
+import Hero from '../components/Hero';
+import leedsYouAround from '../images/leedsYouAround.png';
 
 export default function App() {
   return (
@@ -66,7 +67,7 @@ export default function App() {
             </div>
           </div>
           <div className='project c'>
-          <img className='project-b' src={backendProject} alt="backend project called Phils news"/>
+          <img className='project-b' src={leedsYouAround} alt="backend project called Phils news"/>
             <div className="leedsYouAround-icons">
               <img src={reactNative} alt="React native"/>
               <img src={expo} alt="React Expo"/>

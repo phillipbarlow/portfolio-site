@@ -11,10 +11,9 @@ export default function Contact() {
   return (
     <div className='contactPage'>
       <Header/>
-      <Hero headerName={'Contact'} className={'contact-hero'}/>
+      <Hero headerName={'Contact me..'} className={'contact-hero'} headerText={'contact-txt'}/>
       <section className='contact-section'>
         <div className="contact-container">
-          <p className='contact-txt'>Contact</p>
           <p className='connect-txt'>Let's connect</p>
           <div className="main-image-container">
             <img  className='main-image' src={contactImage} alt="Me last day of Northcoders" />

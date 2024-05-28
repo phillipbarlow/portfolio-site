@@ -38,17 +38,6 @@ header ul li, .submenu-item{
 .submenu-item{
     margin-left:5%;
 }
-/* .work-dropdown:hover .sub-menu-list{
-    position: absolute;
-    height:150px;
-    top:100px;
-    right:50px;
-    width:300px;
-    display: flex;
-    flex-direction: column;
-    z-index: 999;
-    background-color: white;
-} */
 .link{
     text-decoration: none;
     color:#111;
@@ -439,6 +428,18 @@ footer > img{
     grid-area:4/2/span 1/span 1;
     display: flex;
 }
+.about-text,.contact-txt{
+    font-size:7em;
+    font-weight:700;
+    position:absolute;
+    left:15%;
+    color:white;
+    top:20%;
+  }
+  .contact-txt{
+    font-size:3em;
+    text-align: center;
+  }
 
 @media only screen and (max-width: 600px) {
     header{
@@ -450,11 +451,6 @@ footer > img{
         display: flex;
         flex-direction: column;
     }
-    /* .work-dropdown:hover .sub-menu-list{
-        position: static;
-        background-color: black;
-        height: auto;
-    } */
     .link{
     text-decoration: none;
     color:white;
