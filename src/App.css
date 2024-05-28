@@ -38,6 +38,17 @@ header ul li, .submenu-item{
 .submenu-item{
     margin-left:5%;
 }
+/* .work-dropdown:hover .sub-menu-list{
+    position: absolute;
+    height:150px;
+    top:100px;
+    right:50px;
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    background-color: white;
+} */
 .link{
     text-decoration: none;
     color:#111;
@@ -439,6 +450,11 @@ footer > img{
         display: flex;
         flex-direction: column;
     }
+    /* .work-dropdown:hover .sub-menu-list{
+        position: static;
+        background-color: black;
+        height: auto;
+    } */
     .link{
     text-decoration: none;
     color:white;

@@ -19,7 +19,7 @@ const Navigation = () => {
   };
 
   return (
-    <div>
+    <>
         <li>
             <NavLink className='link' to={'/'}>
                 Home
@@ -32,19 +32,19 @@ const Navigation = () => {
         </li>
         {Object.keys(data).map((menu) => (
             <li key={menu} onClick={() => handleMenuClick(menu)}>
-            <NavLink className='link' 
+            <NavLink className='link work-dropdown' 
             to={`${ menu === 'Work'? '' : menu }`}
             >{menu}
             {menu === activeMenu && data[menu].length > 0 && (
-                <ul className="sub-menu-list">
-                    {data[menu].map((submenu) => (
-                        <li key={submenu} className='link' onClick={() => handleSubMenuClick(submenu)}>
-                            <NavLink className='submenu-item link' to={`/${submenu}`}>
-                            {submenu}
-                            </NavLink>
-                        </li>
-                    ))}
-                </ul>
+              <ul className="sub-menu-list">
+                  {data[menu].map((submenu) => (
+                    <li key={submenu} className='link' onClick={() => handleSubMenuClick(submenu)}>
+                        <NavLink className='submenu-item link' to={`/${submenu}`}>
+                        {submenu}
+                        </NavLink>
+                    </li>
+                  ))}
+              </ul>
             )}
             </NavLink>
           </li>
@@ -54,7 +54,7 @@ const Navigation = () => {
                 Contact
             </NavLink>
         </li>
-    </div>
+  </>
   );
 };
 
