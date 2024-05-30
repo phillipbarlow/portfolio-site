@@ -6,7 +6,7 @@ export default function Hero({headerName, intro, bio,mainImage,className,headerT
   return (
     <div className={className}>
         <div className="svg-container">
-            <img src={svg}/>
+            <img src={svg} className='no-underline' alt='decorative svg'/>
         </div>
       <p className={headerText}>{headerName}</p>
       {intro?<p className='intro-text'>{intro}</p>:null}

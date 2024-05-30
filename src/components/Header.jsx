@@ -2,7 +2,7 @@ import { useState,useEffect } from 'react';
 import desktopLogo from '../images/desktop-logo.png';
 import mobilePhoneLogo from '../images/mobile-logo.png';
 import Navigation from './Navigation';
-import {NavLink} from "react-router-dom"
+import {Link} from "react-router-dom"
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [imageSrc, setImageSrc] = useState('');
@@ -26,9 +26,9 @@ export default function Header() {
   return (
     <>
     <header>
-      <NavLink to='/'>
+      <Link to='/'>
       <img src={imageSrc} alt="Home logo"/>
-      </NavLink>
+      </Link>
       <nav>
         <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
         <Navigation/>

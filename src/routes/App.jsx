@@ -1,7 +1,7 @@
 import Header from '../components/Header';
 import '../App.css'
 import svg from '../images/wave-4.svg'
-import mainImage from '../images/mainImage2.png';
+import mainImage from '../images/home-mainImage2.svg';
 import Skills from '../components/Skills';
 import frontendProject from '../images/frontend.png'
 import backendProject from '../images/backend-project.png'
@@ -43,14 +43,16 @@ export default function App() {
                 <img src={axios} alt="React"/>
               </div>
               <div className="overlay">
-                <p className='text'>
-                  <p>Frontend project</p>
-                  <button>View source</button>
-                  </p>
+                <p>Frontend project</p>
+                <div className="btn-container">
+                <a href="https://github.com/phillipbarlow/nc-news" target='_blank'>View source code</a>
+                <a href="https://phils-news.netlify.app" target='_blank'>View site in action</a>
+                <button>View more!</button>
+                </div>
             </div>
           </div>
           <div className='project b'>
-          <img className='project-b' src={backendProject} alt="backend project called Phils news"/>
+            <img className='project-b' src={backendProject} alt="backend project called Phils news"/>
             <div className="backend-icons">
               <img src={js} alt="JavaScript"/>
               <img src={node} alt="Node js"/>
@@ -60,10 +62,11 @@ export default function App() {
               <img src={render} alt="Render"/>
             </div>
             <div className="overlay">
-              <p className='text'>
-                <p>Backend project</p>
-                <button>View source</button>
-                </p>
+              <div className="btn-container">
+              <p>Backend project</p>
+              <a href="https://github.com/phillipbarlow/nc-project-wk" target='_blank'>View source code</a>
+              <button>View more!</button>
+            </div>
             </div>
           </div>
           <div className='project c'>
@@ -77,13 +80,15 @@ export default function App() {
               <img src={jira} alt="Jira"/>
             </div>
             <div className="overlay">
-              <p className='text'>
-                <p>Leeds you around</p>
-                <button>View source</button>
-                </p>
+              <p>Leeds you around</p>
+              <div className="btn-container">
+              <a href="https://github.com/mstent/Leeds-You-Around" target='_blank'>View source code</a>
+              <a href="https://northcoders.com/project-phase/leedsyouaround" target='_blank'>Project page</a>
+              <button>View more</button>
+              </div>
+            </div>
             </div>
           </div>
-        </div>
       </section>
       <Footer/>
     </div>

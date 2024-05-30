@@ -4,7 +4,8 @@ import App from './routes/App.jsx'
 import ErrorPage from './ErrorPage.jsx';
 import About from './routes/About.jsx';
 import Contact from './routes/Contact.jsx';
-import Work from './routes/Work.jsx';
+import NewsFrontend from './routes/NewsFrontend.jsx';
+import Projects from './routes/Projects.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -26,11 +27,34 @@ const router = createBrowserRouter([
     path: "contact",
     element: <Contact />,
   },
-  // {
-  //   path: "work",
-  //   element: <Work />,
-  // },
+  {
+    path: "projects",
+    element: <Projects/>,
+  },
+  {
+    path: "projects/frontend-news-app",
+    element: <NewsFrontend />,
+  },
 ]);
+// const router = createBrowserRouter([
+//     {
+//       path: "/",
+//       element: <App/>,
+//       errorElement:<ErrorPage/>
+//     },
+//     {
+//       path: "about",
+//       element: <About />,
+//     },
+//     {
+//       path: "contact",
+//       element: <Contact />,
+//     },
+//     {
+//       path: "frontend-news-app",
+//       element: <NewsFrontend />,
+//     },
+//   ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

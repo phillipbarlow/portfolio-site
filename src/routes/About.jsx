@@ -38,7 +38,7 @@ export default function About() {
           I like to teach our children there is more to life  than TV and YouTube.
           We also love to bake cakes.</p>
         </div>
-          <Link to="/contact">Lets chat, click here!</Link>
+          <Link to="mailto:phillipbarlow10@gmail.com">Lets chat, click here!</Link>
       </section>
       <Footer/>
     </div>
