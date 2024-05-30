@@ -90,23 +90,23 @@ header ul li, .submenu-item{
 .bio-text{
     position:absolute;
     font-size:1.5em;
-    width:50%;
+    width:40%;
     margin-left:10%;
     color:#535353;
-    top:70%;
+    top:60%;
     color:#111;
 }
- .profile-img-container{
-    position:absolute;
-    top:40%;
-    right:10%;
-    height:700px;
-    width:700px;
+.profile-img-container{
+    position: absolute;
+    right:5%;
+    bottom:5%;
+    width:500px;
+    height:500px;
 }
-    .profile-img-container > .profileImage{
-        height:150%;
-        overflow: hidden;
-    }
+.profile-img-container > .profileImage{
+    height:100%;
+    width:100%;
+}
 .skills{
     height:40vh;
     background-color:#fafafa;
@@ -515,12 +515,18 @@ footer > nav ul li{
         color:#000;
         z-index:999;
     }
+    .profile-img-container{
+        left:50%;
+        width:90%;
+        transform: translate(-50%);
+        top:15%;
+    }
     .home-text{
         font-size:4em;
-        top:4%;
+        top:2%;
     }
     .intro-text{
-        font-size:1em;
+        font-size:0.9em;
         width:60%;
         top:12%;
     }
@@ -532,9 +538,7 @@ footer > nav ul li{
         font-size:1em;
         width:80%;
         line-height:1.5;
-    }
-    .profile-img-container{
-     top: 20%;
+        top:65%;
     }
     /*---Skills--->*/
     .skills{
@@ -727,39 +731,44 @@ footer > nav ul li{
       }
   }
   @media only screen and (min-width: 1800px){
-    .home-text{
-        font-size: 9em;
-        top:5%;
-    }
     .hero{
-        height:1400px;
-        position:relative;
-        overflow:hidden;
-        border:none;
+        max-height: 1000px;
     }
-    .svg-container > img{
-        margin-top:-700px;
-        min-width:100%;
-        margin-bottom:-200px;
-        border:none;
-        text-decoration: none;
-        overflow: hidden;
-        display: block;
-    };
-    .bio-text{
-        font-size:1.5em;
-        width:50%;
-        top:40%;
+      .hero > .intro-text{
+          top:20%;
+        }
+        .home-text{
+            font-size: 9em;
+            top:2%;
+        }
+        .hero > .bio-text{
+            top:55%;
+            width: 40%;
+        }
+        .hero > .profile-img-container{
+            height:400px;
+            width:400px;
+            position: absolute;
+            right:10%;
+            bottom: 20%;
+        }
+        .hero > .profile-img-container > img{
+            height:100%;
+            width: 100%;
+        }
+        .hero{
+            height:1400px;
+            position:relative;
+            overflow:hidden;
+            border:none;
+        }
+        .svg-container > img{
+            margin-top:-700px;
+            min-width:100%;
+            margin-bottom:-200px;
+            border:none;
+            text-decoration: none;
+            overflow: hidden;
+            display: block;
+        };
     }
-    .profile-img-container{
-        position:absolute;
-        bottom:0%;
-        right:8%;
-        height:800px;
-        width:800px;
-    }
-    .profile-img-container > .profileImage{
-        height:150%;
-        overflow: hidden;
-    }
-  }

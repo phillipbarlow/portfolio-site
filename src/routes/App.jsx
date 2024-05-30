@@ -1,7 +1,7 @@
 import Header from '../components/Header';
 import '../App.css'
 import svg from '../images/wave-4.svg'
-import mainImage from '../images/home-mainImage2.svg';
+import mainImage from '../images/home-mainImage3.svg';
 import Skills from '../components/Skills';
 import frontendProject from '../images/frontend.png'
 import backendProject from '../images/backend-project.png'
