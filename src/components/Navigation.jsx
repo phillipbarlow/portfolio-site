@@ -31,25 +31,25 @@ const Navigation = () => {
         </li>
         {Object.keys(data).map((menu) => (
             <li key={menu} onClick={() => handleMenuClick(menu)}>
-            <li to={window.innerWidth >= 600?`/${menu.toLowerCase()}`:'#'} className="link work-dropdown"
-            >
+            <NavLink to={window.innerWidth >= 600?`/${menu.toLowerCase()}`:'#'} className="link work-dropdown">
               {menu}
+              </NavLink>
             {menu === activeMenu && data[menu].length > 0 && (
-              // checks to see if portfolio is link then uses anchor tag instead
+              // checks to see if the portfolio is link then use anchor tag instead
               <ul className="sub-menu-list">
                   {data[menu].map((submenu) => (
-                    submenu === 'portfolio'?(
-                      <a className='submenu-item link'  href="https://github.com/phillipbarlow/portfolio-site" target='_blank'>{submenu}</a>
-                    ):(
-                    <li key={submenu} className='link' onClick={() => handleSubMenuClick(submenu)}>
-                        <Link className='submenu-item link' to={ `/projects/${submenu}`}>
+                      <li key={submenu} onClick={() => handleSubMenuClick(submenu)} >
+                       { submenu === 'portfolio'?( 
+                        <a className='link' href='https://github.com/phillipbarlow/portfolio-site' target='_blank' rel="noopener noreferrer">
+                          {submenu}
+                        </a>):(
+                       <Link className='submenu-item link' to={ `/projects/${submenu}`}>
                         {submenu}
-                        </Link>
-                    </li>)
+                        </Link>)}
+                      </li>
                   ))}
               </ul>
             )}
-            </li>
           </li>
         ))}
         <li>

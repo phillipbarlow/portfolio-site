@@ -34,27 +34,8 @@ const router = createBrowserRouter([
   {
     path: "projects/frontend-news-app",
     element: <NewsFrontend />,
-  },
+  }
 ]);
-// const router = createBrowserRouter([
-//     {
-//       path: "/",
-//       element: <App/>,
-//       errorElement:<ErrorPage/>
-//     },
-//     {
-//       path: "about",
-//       element: <About />,
-//     },
-//     {
-//       path: "contact",
-//       element: <Contact />,
-//     },
-//     {
-//       path: "frontend-news-app",
-//       element: <NewsFrontend />,
-//     },
-//   ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
