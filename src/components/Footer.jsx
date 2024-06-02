@@ -8,7 +8,7 @@ export default function Footer() {
         <img className="footerImg" src={mobileLogo} alt="logo"/>
         </Link>
         <p className="footer-message">Thanks for scrolling!</p>
-        <p className="trademark">2024&copy;Phillip Barlow, AlL rights reserved </p>
+        <p className="trademark">2024 &copy;Phillip Barlow, All rights reserved </p>
       </footer>
     </div>
   )

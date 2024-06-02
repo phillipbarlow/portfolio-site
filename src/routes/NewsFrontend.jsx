@@ -3,26 +3,29 @@ import Hero from '../components/Hero';
 import Header from '../components/Header';
 import frontend from '../images/frontend.png';
 import frontendmobile from '../images/frontend-mobile.png';
+import Footer from '../components/Footer';
 
 export default function NewsFrontend() {
   return (
     <div>
         <Header/>
-      <Hero/>
+      <Hero headerName={'Phils news read all about it!'} headerText={'frontendTextClass'}/>
       <section className='frontend-page'>
         <h1>Phils news frontend</h1>
-        <p>CRUD Project: Managing Data in React</p>
-        <img src={frontend} alt="Phils new desktop view"/>
-        <img src={frontendmobile} alt="Phils new desktop view"/>
+        <h2 className='subHeading'>CRUD Project: Managing Data in React</h2>
+        <div className="frontendImg-container">
+          <img className='frontendDesktopImg' src={frontend} alt="Phils new desktop view"/>
+          <img className='frontendMobileImg' src={frontendmobile} alt="Phils new desktop view"/>
+        </div>
         <p> 
         This project demonstrates my ability to build a single-page application (SPA) using React for managing data. The application implements CRUD (Create, Read, Update, Delete) operations, allowing users to interact with data in a user-friendly interface.
         </p>
-        <p>Features</p>
+        <h2>Features</h2>
         <ul>
           <li>Create, read, update, and delete data</li>
           <li>Built with React components and state management</li>
         </ul>
-        <p>Technologies Used:</p>
+        <h2>Technologies Used:</h2>
         <ul>
           <li>HTML/CSS</li>
           <li>JavaScript</li>
@@ -30,10 +33,11 @@ export default function NewsFrontend() {
           <li>React router</li>
         </ul>
         <div className="fronted-btn-container-mobile">
-          <button>View in action</button>
-          <button>View on Github</button>
+          <button className='action-btn'>View in action</button>
+          <button className='github-btn-frontend'>View on Github</button>
         </div>
       </section>
+      <Footer/>
     </div>
   )
 }

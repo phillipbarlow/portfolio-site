@@ -808,6 +808,71 @@ footer > nav ul li{
         color:none;
         padding: none;
       }
+      /* Frontend page */
+      .frontend-page{
+        height:100vh;
+      }
+      .frontend-page p, .frontend-page > ul li,h2,.fronted-btn-container-mobile{
+        margin:0 auto;
+        width:80%;
+        line-height: 1.5;
+      }
+      .frontend-page > p, .frontend-page > ul{
+        margin-bottom: 20px;
+      }
+      .frontend-page > h1{
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 400;
+        
+      }
+      .subHeading{
+        text-align: center;
+      }
+      .frontendDesktopImg{
+        height:150px;
+      }
+      .frontendMobileImg{
+        height:200px;
+      }
+      .frontendImg-container{
+        margin: 20px auto;
+        display: flex;
+        width:90%;
+        gap:5px;
+      }
+      .frontendTextClass{
+        font-size:2em;
+        font-weight:700;
+        position:absolute;
+        left:50%;
+        color:white;
+        top:20%;
+        transform: translate(-50%);
+        width:80%;
+      }
+      .fronted-btn-container-mobile{
+        width:80%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .fronted-btn-container-mobile > button{
+        color: white;
+        padding:10px 20px;
+        border:none;
+        border-radius: 3px;
+        font-size: 1.2em;
+        }
+        .action-btn{
+          background-color: #0D77B1;
+          color:white;
+      }
+      .fronted-btn-container-mobile > .github-btn-frontend{
+            background-color: white;
+            color:#0D77B1;
+            border: solid 3px #0D77B1;
+
+        };
   }
   @media only screen and (min-width: 1800px){
     .hero{
