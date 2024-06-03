@@ -33,8 +33,12 @@ export default function NewsFrontend() {
           <li>React router</li>
         </ul>
         <div className="fronted-btn-container-mobile">
-          <button className='action-btn'>View in action</button>
-          <button className='github-btn-frontend'>View on Github</button>
+          <button className='action-btn'>
+            <a href="https://phils-news.netlify.app" target='_blank'>View in action</a>
+          </button>
+          <button className='github-btn-frontend'>
+            <a href="https://github.com/phillipbarlow/nc-news" target='_blank'>View on Github</a>
+          </button>
         </div>
       </section>
       <Footer/>
