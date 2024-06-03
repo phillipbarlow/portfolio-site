@@ -7,10 +7,10 @@ import Footer from '../components/Footer';
 
 export default function NewsFrontend() {
   return (
-    <div>
+    <div className='frontend-page'>
         <Header/>
+      <section >
       <Hero headerName={'Phils news read all about it!'} headerText={'frontendTextClass'}/>
-      <section className='frontend-page'>
         <h1>Phils news frontend</h1>
         <h2 className='subHeading'>CRUD Project: Managing Data in React</h2>
         <div className="frontendImg-container">
