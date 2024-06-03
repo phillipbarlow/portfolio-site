@@ -33,11 +33,11 @@ const router = createBrowserRouter([
     element: <Projects/>,
   },
   {
-    path: "projects/frontend-news-app",
+    path: "projects/frontendnewsapp",
     element: <NewsFrontend />,
   },
   {
-    path: "projects/backend-news-app",
+    path: "projects/backendnewsapp",
     element: <NewsBackend/>,
   }
 ]);

@@ -38,12 +38,14 @@ const Navigation = () => {
               // checks to see if the portfolio is link then use anchor tag instead
               <ul className="sub-menu-list">
                   {data[menu].map((submenu) => (
-                      <li key={submenu} onClick={() => handleSubMenuClick(submenu)} >
+                    <li key={submenu} onClick={() => handleSubMenuClick(submenu)} >
+                        {/* {console.log(submenu.replace(/-/g,''))} */}
+                        {/* {console.log(submenu)} */}
                        { submenu === 'portfolio'?( 
                         <a className='link' href='https://github.com/phillipbarlow/portfolio-site' target='_blank' rel="noopener noreferrer">
                           {submenu}
                         </a>):(
-                       <Link className='submenu-item link' to={ `/projects/${submenu}`}>
+                       <Link className='submenu-item link' to={ `/projects/${submenu.replace(/-/g,'')}`}>
                         {submenu}
                         </Link>)}
                       </li>

@@ -838,9 +838,7 @@ footer > nav ul li{
         padding: none;
       }
       /* Frontend page */
-      .frontend-page{
-        height:100vh;
-      }
+
       .frontend-page p, .frontend-page > ul li,h2,.fronted-btn-container-mobile{
         margin:0 auto;
         width:80%;
@@ -894,9 +892,10 @@ footer > nav ul li{
         border:none;
         border-radius: 3px;
         font-size: 1.2em;
+        margin-bottom: 50px;
         }
-        .action-btn{
-          background-color: #0D77B1;
+    .action-btn{
+        background-color: #0D77B1;
       }
       .action-btn > a{
           color:white;
