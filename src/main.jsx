@@ -5,7 +5,8 @@ import ErrorPage from './ErrorPage.jsx';
 import About from './routes/About.jsx';
 import Contact from './routes/Contact.jsx';
 import NewsFrontend from './routes/NewsFrontend.jsx';
-import Projects from './routes/Projects.jsx'
+import NewsBackend from './routes/NewsBackend.jsx';
+import Projects from './routes/Projects.jsx';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "projects/frontend-news-app",
     element: <NewsFrontend />,
+  },
+  {
+    path: "projects/backend-news-app",
+    element: <NewsBackend/>,
   }
 ]);
 

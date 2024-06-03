@@ -882,7 +882,83 @@ footer > nav ul li{
             color:#0D77B1;
             border: solid 3px #0D77B1;
         };
-  }
+        /* Backend page */
+
+        .backend-page{
+            height:100vh;
+          }
+        .backend-page p, .backend-page > ul li,h2,.fronted-btn-container-mobile{
+        margin:0 auto;
+        width:80%;
+        line-height: 1.5;
+        }
+        .backend-page> p, .backend-page> ul{
+        margin-bottom: 20px;
+        }
+        .backend-page > ul{
+        list-style-position: inside;
+        padding-left: 20px;
+        }
+        .backend-page > h1{
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 400;
+        
+        }
+        .subHeading{
+        text-align: center;
+        }
+        .backendDesktopImg{
+        width:350px;
+        margin: 30px auto;
+        }
+        .backendDesktopImg > img{
+        object-fit: cover;
+        height:100%;
+        width:100%;
+        }
+        .backendTextClass{
+        font-size:2em;
+        font-weight:700;
+        position:absolute;
+        left:50%;
+        color:white;
+        top:20%;
+        transform: translate(-50%);
+        width:80%;
+        }
+        .backend-btn-container-mobile{
+        width:80%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto 30px auto;
+        }
+        .backend-btn-container-mobile > button{
+        color: white;
+        padding:10px 0px;
+        border:none;
+        border-radius: 3px;
+        font-size: 1.2em;
+        width:155px;
+        gap:20px;
+        }
+        .action-btn{
+            background-color: #0D77B1;
+        }
+        .action-btn > a{
+            color:white;
+            text-decoration: none;
+        }
+        .github-btn-backend > a{
+        color:#0D77B1;
+        text-decoration: none;
+        }
+        .backend-btn-container-mobile > .github-btn-backend{
+            background-color: white;
+            color:#0D77B1;
+            border: solid 3px #0D77B1;
+        };
+    }
   @media only screen and (min-width: 1800px){
     .hero{
         max-height: 1000px;
