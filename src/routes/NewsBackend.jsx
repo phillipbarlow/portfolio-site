@@ -37,8 +37,8 @@ export default function NewsBackend() {
             <a href="https://github.com/phillipbarlow/nc-project-wk" target='_blank'>View on Github</a>
           </button>
         </div>
-      <Footer/>
     </section>
+      <Footer/>
     </div>
   )
 }

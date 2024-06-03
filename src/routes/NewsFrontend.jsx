@@ -40,8 +40,8 @@ export default function NewsFrontend() {
             <a href="https://github.com/phillipbarlow/nc-news" target='_blank'>View on Github</a>
           </button>
         </div>
-      <Footer/>
       </section>
+      <Footer/>
     </div>
   )
 }

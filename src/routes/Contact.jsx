@@ -4,10 +4,10 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import contactImage from '../images/Phil.jpeg';
-import linkedin from '../images/linkedin.png';
-import github from '../images/github.png';
-import email from '../images/email.png';
-import x from '../images/twitterx.png';
+import linkedin from '../images/linkedin.svg';
+import github from '../images/github.svg';
+import email from '../images/email.svg';
+import x from '../images/twitter.svg';
 export default function Contact() {
   return (
     <div className='contactPage'>
@@ -20,26 +20,26 @@ export default function Contact() {
             <img  className='main-image' src={contactImage} alt="Me last day of Northcoders" />
           </div>
           <div className="linkedin">
-            <a className="linkedin" href="https://www.linkedin.com/in/phil-barlow-0222461b5" target="_blank">
-            <img src={linkedin}alt="Linkedin contact me" />
+            <a  href="https://www.linkedin.com/in/phil-barlow-0222461b5" target="_blank">
+            <img className="linkedinImg" src={linkedin}alt="Linkedin contact me" />
             <p>Linkedin</p>
             </a>
           </div>
           <div className="github">
-            <a className="github" href='https://github.com/phillipbarlow' target="_blank">
-            <img className='github' src={github} alt="Github contact me" />
+            <a href='https://github.com/phillipbarlow' target="_blank">
+            <img className='githubImg' src={github} alt="Github contact me" />
             <p>Github</p>
             </a>
           </div>
           <div className="x">
-            <a className="x" href="https://x.com/PhillipBarlow14" target="_blank" >
-              <img src={x} alt="Connect with me on twitter X"/>
+            <a  href="https://x.com/PhillipBarlow14" target="_blank" >
+              <img className="xImg" src={x} alt="Connect with me on twitter X"/>
               <p>Twitter X</p>
             </a>
          </div>
           <div className="email">
             <a href="mailto:phillipbarlow10@gmail.com" target="_blank" >
-            <img src={email} alt="Email me"/>
+            <img className='emailImg' src={email} alt="Email me"/>
             <p>Contact</p>
             </a>
           </div>

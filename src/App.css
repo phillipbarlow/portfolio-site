@@ -42,7 +42,6 @@ header ul li, .submenu-item{
 }
 .sub-menu-list{
     display: none;
-
 }
 .link{
     text-decoration: none;
@@ -426,45 +425,60 @@ footer > nav ul li{
     border-radius: 5px;
     border: solid 4px white;
 }
-.contact-txt{
+/* .contact-txt{
     grid-area:1/1/span 1/span 1;
     font-weight: 600;
     font-size:1.5em
-}
+} */
 .connect-txt{
     grid-area:2/1/span 1/span 1;
+    font-size:1.5em;
+    border:solid 2px #0D77B1;
+    text-align:center;
+    background-color: white;
+    color:#0D77B1;
+    align-self: center;
 }
 .main-image-container{
     grid-area:2/3/span 3/ span 1;
 }
-.main-image-container > img{
-    height:100%;
-    width:100%;
-    object-fit: cover;
-}
-.linkedin,.github,.x,.email{
-    display: flex;
-    gap:20px
-}
 .linkedin{
     grid-area:3/1/span 1/span 1;
-}
-.linkedin > p, .github > p,.x > p, .email > p{
-    align-self: center;
 }
 .github{
     grid-area:4/1/span 1/span 1;
 }
 .x{
     grid-area:3/2/span 1/span 1;
-}
-.linkedin > img, .github > img, .x > img, .email > img{
-    height:60px;
+    max-height:100px;
 }
 .email{
     grid-area:4/2/span 1/span 1;
-    display: flex;
+    max-height:100px;
 }
+.email > a, .x > a, .github > a, .linkedin > a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    gap:20px;
+    color:#0D77B1;
+    font-size: 1.4em;
+    
+}
+.emailImg, .xImg, .linkedinImg, .githubImg{
+    height: 100%;
+}
+.main-image-container > img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.linkedin, .github, .x, .email{
+    display: flex;
+    height:60px;
+}
+
 .about-text,.contact-txt{
     font-size:7em;
     font-weight:700;
@@ -564,13 +578,21 @@ footer > nav ul li{
         grid-template-rows:120px;
         grid-template-columns:auto 1fr 100px;
     }
+    header > ul{
+        padding: 0px;
+    }
     .sub-menu-list{
         display: flex;
         flex-direction: column;
+        padding: 0px;
+    }
+    .contact-listitem{
+        padding: 0px;
     }
     .link{
         text-decoration: none;
         color:white;
+        padding: 0px;
     }
     .footerLink{
         text-decoration: none;
@@ -625,6 +647,7 @@ footer > nav ul li{
         width:90%;
         transform: translate(-50%);
         top:15%;
+        overflow: hidden;
     }
     .home-text,.projects-text{
         font-size:4em;
@@ -639,11 +662,20 @@ footer > nav ul li{
         z-index:9;
         height: 100vh;
     }
+    .connect-txt{
+        grid-area: 1/1/span 1/span 2;
+    }
     .bio-text{
         font-size:1em;
         width:80%;
         line-height:1.5;
         top:65%;
+    }
+    .linkedin > a, .github > a, .x > a, .email > a{
+        font-size: 1em;
+    }
+    .githubImg, .linkedinImg,.xImg, .emailImg{
+        height:50px;
     }
     /*---Skills--->*/
     .skills{
@@ -757,7 +789,7 @@ footer > nav ul li{
       }
       /* About */
       .about-text{
-        font-size:4em;
+        font-size:3em;
         font-weight:700;
         position:absolute;
         left:15%;
@@ -765,8 +797,9 @@ footer > nav ul li{
         top:20%;
       }
       .img-container{
-        height:400px;
-        width:400px;
+        height:300px;
+        width:300px;
+        margin-top: -100px;
       }
       .img-container > img{
         min-height:100%;
@@ -790,7 +823,7 @@ footer > nav ul li{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(5,auto);
-        margin:0px;
+        margin-top:-100px;
         width:100%;
         height:100%;
     }
@@ -798,7 +831,10 @@ footer > nav ul li{
         grid-area: 1/1/span 1/span 1;
     }
     .connect-txt{
-        grid-area: 2/1/span 1/span 1;
+        grid-area: 1/1/span 1/span 1;
+        font-size: 1.2em;
+        padding: 10px 3px;
+        border-radius: 3px;
     }
     .linkedin{
         grid-area: 3/1/span 1/span 1;
@@ -814,23 +850,9 @@ footer > nav ul li{
     }
     .main-image-container{
         grid-area: 5/1/span 1/span 2;
-        min-height:200px;
-        max-height:600px;
-        height:100%;
-        min-width:200px;
-        max-width:600px;
-        width:100%;
         border-radius: 5px;
         overflow: hidden;
-      }
-      .main-image-container > img{
-        min-height:200px;
-        max-height:600px;
-        height:100%;
-        min-width:200px;
-        max-width:600px;
-        width:100%;
-        object-fit: cover;
+
       }
       .link.active{
         background-color: black;
@@ -854,7 +876,7 @@ footer > nav ul li{
         text-align: center;
         margin-bottom: 20px;
         font-weight: 400;
-        
+        margin-top: -100px;
       }
       .subHeading{
         text-align: center;
@@ -931,6 +953,7 @@ footer > nav ul li{
         text-align: center;
         margin-bottom: 20px;
         font-weight: 400;
+        margin-top: -100px;
         
         }
         .subHeading{
