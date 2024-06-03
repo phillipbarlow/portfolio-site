@@ -39,8 +39,8 @@ const Navigation = () => {
               <ul className="sub-menu-list">
                   {data[menu].map((submenu) => (
                     <li key={submenu} onClick={() => handleSubMenuClick(submenu)} >
-                        {/* {console.log(submenu.replace(/-/g,''))} */}
-                        {/* {console.log(submenu)} */}
+                        {console.log(submenu.replace(/-/g,''))}
+                        {console.log(submenu)}
                        { submenu === 'portfolio'?( 
                         <a className='link' href='https://github.com/phillipbarlow/portfolio-site' target='_blank' rel="noopener noreferrer">
                           {submenu}

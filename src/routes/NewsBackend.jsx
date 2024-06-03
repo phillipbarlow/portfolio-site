@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 export default function NewsBackend() {
   return (
     <div>
-    <section className='backend-page'>
+      <section className='backend-page'>
       <Header/>
       <Hero headerText={'backendTextClass'} headerName={'Phils news backend'}/>
       <h1>Phils news backend</h1>
@@ -37,8 +37,8 @@ export default function NewsBackend() {
             <a href="https://github.com/phillipbarlow/nc-project-wk" target='_blank'>View on Github</a>
           </button>
         </div>
+      <Footer/>
     </section>
-    <Footer/>
     </div>
   )
 }
