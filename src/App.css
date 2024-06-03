@@ -180,7 +180,7 @@ header ul li, .submenu-item{
     font-size:1.3em;
 }
 .latestWork-sectionContainer{
-    height:60vh;
+    /* height:60vh; */
     align-items: center;
     justify-items: center;
     display:flex;
@@ -190,9 +190,11 @@ header ul li, .submenu-item{
 .projects-container{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto 400px;
+    grid-template-rows:auto 400px;
     width:65%;
     gap:50px;
+    margin-top: 50px;
+    margin-bottom:50px;
 }
 .project{
     background-color:#ddd;
@@ -202,9 +204,9 @@ header ul li, .submenu-item{
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 .project > img{
-    flex-grow:1;
     padding:5px;
     Object-fit:cover;
+    border-radius: 10px;
 }
 
 .frontend-icons, .backend-icons, .leedsYouAround-icons{
@@ -230,26 +232,44 @@ header ul li, .submenu-item{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
+    height: 250px;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #a5a5a5;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
-.text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+.overlay p{
+    margin-top: 10px;
+    font-weight: 500;
+    color: #0D77B1;;
+    font-size: 2em;
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    gap:5px;
+    margin-bottom: 20px;
+}
+.btn-container > button a{
+    color:white;
+    border: none;
+    text-decoration: none;
+}
+.btn-container > button{
+    border: none;
+    background-color: #0D77B1;
+    color:white;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
 .a img, .b img, .c img{
     width:100%;
-    height:100%;
+    height:250px;
     overflow:hidden;
 }
 .a{
@@ -361,6 +381,12 @@ footer > nav ul li{
 .littleBit-about > .about-title,.littlebitMore-about > .about-title{
     font-size: 1.5em;
     margin-bottom: 30px;
+}
+.about-main > a{
+    text-decoration: none;
+    color:#0D77B1;
+    font-size: 1.2em;
+    font-weight: 400;
 }
 /* Contact */
 .contact-section{
@@ -674,10 +700,10 @@ footer > nav ul li{
     .projects-container{
         display:grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px repeat(3, 1fr);
+        grid-template-rows: auto repeat(3, 1fr);
         width:80%;
         height:100%;
-        gap:50px;
+        gap:30px;
     }
     .project{
        box-shadow:none;
@@ -704,6 +730,9 @@ footer > nav ul li{
     }
     .c{
         grid-area:4/1/span 1/ span 1;
+    }
+    .overlay p{
+        font-size: 1.5em;
     }
     footer{
         height:120px;

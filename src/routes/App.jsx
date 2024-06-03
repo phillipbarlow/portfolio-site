@@ -23,6 +23,7 @@ import jira from '../images/jira.svg';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import leedsYouAround from '../images/leedsYouAround.png';
+import {NavLink,Link} from "react-router-dom";
 
 export default function App() {
   return (
@@ -43,11 +44,15 @@ export default function App() {
                 <img src={axios} alt="React"/>
               </div>
               <div className="overlay">
-                <p>Frontend project</p>
+                <p>Phils news frontend</p>
                 <div className="btn-container">
-                <a href="https://github.com/phillipbarlow/nc-news" target='_blank'>View source code</a>
-                <a href="https://phils-news.netlify.app" target='_blank'>View site in action</a>
-                <button>View more!</button>
+                  <button>
+                    <a href="https://github.com/phillipbarlow/nc-news" target='_blank'>View source code</a>
+                  </button>
+                  <button>
+                    <a href="https://phils-news.netlify.app" target='_blank'>View site in action</a>
+                  </button>
+                <button><Link to={"projects/frontend-news-app"}>View more!</Link></button>
                 </div>
             </div>
           </div>
@@ -62,10 +67,12 @@ export default function App() {
               <img src={render} alt="Render"/>
             </div>
             <div className="overlay">
+              <p>Phils news API</p>
               <div className="btn-container">
-              <p>Backend project</p>
-              <a href="https://github.com/phillipbarlow/nc-project-wk" target='_blank'>View source code</a>
-              <button>View more!</button>
+              <button>
+                  <a href="https://github.com/phillipbarlow/nc-project-wk" target='_blank'>View source code</a>
+              </button>
+              <button><Link to={"projects/backend-news-app"}>View more!</Link></button>
             </div>
             </div>
           </div>
@@ -80,11 +87,17 @@ export default function App() {
               <img src={jira} alt="Jira"/>
             </div>
             <div className="overlay">
-              <p>Leeds you around</p>
+              <p>LeedsYouAround</p>
               <div className="btn-container">
-              <a href="https://github.com/mstent/Leeds-You-Around" target='_blank'>View source code</a>
-              <a href="https://northcoders.com/project-phase/leedsyouaround" target='_blank'>Project page</a>
-              <button>View more</button>
+                <button>
+                  <a href="https://github.com/mstent/Leeds-You-Around" target='_blank'>View source code</a>
+                </button>
+                <button>
+                  <a href="https://northcoders.com/project-phase/leedsyouaround" target='_blank'>Project page</a>
+                </button>
+              <button>
+                <Link to={"https://northcoders.com/project-phase/leedsyouaround"}>View more!</Link>
+              </button>
               </div>
             </div>
             </div>
