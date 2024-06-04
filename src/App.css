@@ -436,11 +436,6 @@ footer > nav ul li{
     border-radius: 5px;
     border: solid 4px white;
 }
-/* .contact-txt{
-    grid-area:1/1/span 1/span 1;
-    font-weight: 600;
-    font-size:1.5em
-} */
 .connect-txt{
     grid-area:2/1/span 1/span 1;
     font-size:1.5em;
@@ -494,12 +489,12 @@ footer > nav ul li{
     font-size:7em;
     font-weight:700;
     position:absolute;
-    left:15%;
+    left:10%;
     color:white;
     top:20%;
   }
   .contact-txt{
-    font-size:3em;
+    font-size:7em;
     text-align: center;
   }
   .emailImg:hover,.xImg:hover,.githubImg:hover,.linkedinImg:hover{
@@ -508,11 +503,11 @@ footer > nav ul li{
   }
   /* Projects */
   .projects-text{
-    font-size:8em;
+    font-size:7em;
     display:inline;
     font-weight:700;
     position:absolute;
-    top:15%;
+    top:20%;
     left:10%;
     color:#fff;
   }
@@ -665,10 +660,12 @@ footer > nav ul li{
         padding-bottom: 10px;
     }
    
-    .home-text,.projects-text{
+    .home-text{
         font-size:4em;
         top:5%;
+        left:10%;
     }
+
     .intro-text{
         font-size:0.9em;
         width:60%;
@@ -844,6 +841,10 @@ footer > nav ul li{
         height:100%;
         padding-top: 100px;
     }
+    .contact-txt{
+        font-size:3em;
+        left:10%;
+    }
     .connect-txt{
         grid-area: 1/1/span 1/span 1;
         font-size: 1.2em;
@@ -890,7 +891,7 @@ footer > nav ul li{
         text-align: center;
         margin-bottom: 20px;
         font-weight: 400;
-        margin-top: -100px;
+        margin-top: -50px;
       }
       .subHeading{
         text-align: center;
@@ -908,12 +909,12 @@ footer > nav ul li{
         gap:5px;
       }
       .frontendTextClass{
-        font-size:2em;
+        font-size:4em;
         font-weight:700;
         position:absolute;
         left:50%;
         color:white;
-        top:20%;
+        top:15%;
         transform: translate(-50%);
         width:80%;
       }
@@ -983,14 +984,14 @@ footer > nav ul li{
         width:100%;
         }
         .backendTextClass{
-        font-size:2em;
+        font-size:2.5em;
         font-weight:700;
         position:absolute;
         left:50%;
         color:white;
-        top:20%;
+        top:15%;
         transform: translate(-50%);
-        width:80%;
+        width:90%;
         }
         .backend-btn-container-mobile{
         width:80%;
@@ -1034,6 +1035,7 @@ footer > nav ul li{
         .home-text{
             font-size: 9em;
             top:2%;
+            left:10%;
         }
         .hero > .bio-text{
             top:75%;
@@ -1088,5 +1090,14 @@ footer > nav ul li{
         }
         .portfolio-project{
             grid-area: 4/1/span 1/span 1;
+        }
+        .projects-text{
+            top:20%;
+            left:10%;
+        }
+        /* contact me */
+        .contact-txt{
+            font-size: 6em;
+            left:10%;
         }
     }
