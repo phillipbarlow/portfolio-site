@@ -34,9 +34,8 @@ export default function Header() {
         <Navigation/>
         </ul>
       </nav>
-      <button className="menu-toggle" onClick={toggleMenu}>
-          &#9776;
-        </button>
+      <button className="menu-toggle" onClick={toggleMenu} dangerouslySetInnerHTML={{ __html: isOpen ?'&times;' :'&#9776;' }}>
+    </button>
     </header>
     </>
   )

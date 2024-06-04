@@ -5,6 +5,7 @@ import Hero from '../components/Hero';
 import frontendProject from '../images/frontend.png'
 import backendProject from '../images/backend-project.png'
 import leedsYouAround from '../images/leedsYouAround.png';
+import portfolioImg from '../images/portfolioImg.png';
 export default function Work() {
   return (
     <div>
@@ -46,14 +47,13 @@ export default function Work() {
               <a href="https://github.com/mstent/Leeds-You-Around" target="_blank">View on Github</a>
             </div>
           </div>
-            <img className='portfolio-img' src={backendProject} alt="" />
+            <img className='portfolio-img' src={portfolioImg} alt="" />
           <div className='portfolio-txt'>
             <p className='project-title'>Portfolio site</p>
             <p className='portfolio-txt'>
               This site which you are viewing now, I created to demonstate some of my ability to use HTML CSS and React.
             </p>
             <div className="projectBtn-container">
-              <a href="https://phillipbarlow.netlify.app" target="_blank">View in action</a>
               <a href="https://github.com/phillipbarlow/portfolio-site" target="_blank">View on Github</a>
             </div>
           </div>
