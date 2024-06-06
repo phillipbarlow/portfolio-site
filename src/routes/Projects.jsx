@@ -2,10 +2,10 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
-import frontendProject from '../images/frontend.png'
-import backendProject from '../images/backend-project.png'
-import leedsYouAround from '../images/leedsYouAround.png';
-import portfolioImg from '../images/portfolioImg.png';
+import frontendProject from '../images/frontend.webp'
+import backendProject from '../images/backend-project.webp'
+import leedsYouAround from '../images/leedsYouAround.webp';
+import portfolioImg from '../images/portfolioImg.webp';
 export default function Work() {
   return (
     <div>

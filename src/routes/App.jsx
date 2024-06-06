@@ -1,9 +1,9 @@
 import Header from '../components/Header';
 import '../App.css'
-import mainImage from '../images/main-image(default).png';
+import mainImage from '../images/main-image.webp';
 import Skills from '../components/Skills';
-import frontendProject from '../images/frontend.png'
-import backendProject from '../images/backend-project.png'
+import frontendProject from '../images/frontend.webp'
+import backendProject from '../images/backend-project.webp'
 import react from '../images/react.png';
 import html from '../images/html.png';
 import css from '../images/css.png';
@@ -21,8 +21,8 @@ import googleVision from '../images/googleVision.png';
 import jira from '../images/jira.svg';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
-import leedsYouAround from '../images/leedsYouAround.png';
-import {NavLink,Link} from "react-router-dom";
+import leedsYouAround from '../images/leedsYouAround.webp';
+import {Link} from "react-router-dom";
 
 export default function App() {
   return (

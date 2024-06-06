@@ -103,9 +103,9 @@ header ul li,
 }
 .profile-img-container {
   position: absolute;
-  width: 500px;
-  height: 500px;
-  top: 45%;
+  width: 400px;
+  height: auto;
+  top: 55%;
   left: 70%;
   transform: translate(-50%);
 }
@@ -355,8 +355,6 @@ footer > nav ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-grow: 1;
-  height: 80vh;
 }
 .hero > .svg-container {
   height: 800px;
@@ -377,12 +375,8 @@ footer > nav ul li {
   width: 100%;
 }
 .img-container {
-  min-height: 200px;
-  height: 100%;
-  max-height: 400px;
-  min-width: 200px;
-  width: 100%;
-  max-width: 400px;
+  height:400px;
+  width:400px;
   overflow: hidden;
   position: relative;
   margin-bottom: 100px;
@@ -841,7 +835,7 @@ footer > nav ul li {
   .img-container {
     height: 300px;
     width: 300px;
-    margin-top: -100px;
+    margin-top: -50px;
   }
   .img-container > img {
     min-height: 100%;
@@ -1079,8 +1073,8 @@ footer > nav ul li {
   }
   .profile-img-container {
     position: absolute;
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height:auto;
     top: 55%;
     left: 70%;
     transform: translate(-50%);

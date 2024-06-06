@@ -1,8 +1,8 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import Header from '../components/Header';
-import frontend from '../images/frontend.png';
-import frontendmobile from '../images/frontend-mobile.png';
+import frontend from '../images/frontend.webp';
+import frontendmobile from '../images/frontend-mobile.webp';
 import Footer from '../components/Footer';
 
 export default function NewsFrontend() {

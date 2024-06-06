@@ -1,5 +1,5 @@
 import React from "react";
-import backendImg from "../images/backend-project.png";
+import backendImg from "../images/backend-project.webp";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Footer from "../components/Footer";

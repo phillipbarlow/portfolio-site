@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import { Form } from "react-router-dom";
 import {Link} from "react-router-dom";
-import profile from "../images/profile-image.jpg"
+import profile from "../images/profile-image.webp"
 
 export default function About() {
   return (
