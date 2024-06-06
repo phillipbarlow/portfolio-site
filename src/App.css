@@ -609,9 +609,10 @@ footer > nav ul li {
 @media only screen and (max-width: 600px) {
   .profile-img-container {
     position: absolute;
-    width: 400px;
-    /* height:350px; */
-    top: 25%;
+    width: 250px;
+    height:auto;
+    /* height:250px; */
+    top: 35%;
     left: 50%;
     transform: translate(-50%);
   }
@@ -641,10 +642,7 @@ footer > nav ul li {
     color: #e8e5e5;
   }
   .hero {
-    max-height: 800px;
-  }
-  .svg-container {
-    height: 400px;
+    max-height: 700px;
   }
   .svg-container > img {
     margin-top: 0px;
@@ -707,7 +705,7 @@ footer > nav ul li {
     font-size: 1em;
     width: 80%;
     line-height: 1.5;
-    top: 80%;
+    top: 70%;
   }
   .linkedin > a,
   .github > a,
