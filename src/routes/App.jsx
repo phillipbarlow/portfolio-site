@@ -1,6 +1,6 @@
 import Header from '../components/Header';
 import '../App.css'
-import mainImage from '../images/home-mainImage3.svg';
+import mainImage from '../images/main-image(default).png';
 import Skills from '../components/Skills';
 import frontendProject from '../images/frontend.png'
 import backendProject from '../images/backend-project.png'
