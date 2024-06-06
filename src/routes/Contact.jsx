@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
-import contactImage from '../images/Phil.jpeg';
+import contactImage from '../images/Phil.png';
 import linkedin from '../images/linkedin.svg';
 import github from '../images/github.svg';
 import email from '../images/email.svg';
