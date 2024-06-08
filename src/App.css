@@ -852,19 +852,19 @@ footer > nav ul li {
   }
   /* Contact */
   .contact-section {
-    width: 90%;
-    margin: 0px auto;
-    margin-bottom: 100px;
+    width: 75%;
+    margin: 0px auto 30px auto;
     height: auto;
   }
   .contact-container {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(4, auto);
-    width: 100%;
+    max-width: 350px;
+    width:auto;
     height: 100%;
-    /* padding-top: 30px; */
-    padding:0px;
+    padding:20px;
+    gap:10px;
   }
   .contact-txt {
     font-size: 3em;
@@ -887,6 +887,9 @@ footer > nav ul li {
   }
   .email {
     grid-area: 3/2 / span 1 / span 1;
+  }
+  .email > a, .x > a, .github > a, .linkedin > a{
+    width:100%;
   }
   .main-image-container {
     grid-area: 4/1 / span 1 / span 2;
@@ -1022,7 +1025,7 @@ footer > nav ul li {
     position: absolute;
     left: 50%;
     color: white;
-    top: 10px;
+    top: 150px;
     transform: translate(-50%);
     width: 90%;
   }

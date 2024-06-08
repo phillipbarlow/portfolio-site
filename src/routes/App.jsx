@@ -46,12 +46,11 @@ export default function App() {
                 <p>Phils news frontend</p>
                 <div className="btn-container">
                   <button>
-                    <a href="https://github.com/phillipbarlow/nc-news" target='_blank'>View source code</a>
+                    <a href="https://github.com/phillipbarlow/nc-news" target='_blank'>View on Github</a>
                   </button>
                   <button>
                     <a href="https://phils-news.netlify.app" target='_blank'>View site in action</a>
                   </button>
-                <button><Link to={"projects/frontend-news-app"}>View more!</Link></button>
                 </div>
             </div>
           </div>
@@ -69,9 +68,9 @@ export default function App() {
               <p>Phils news API</p>
               <div className="btn-container">
               <button>
-                  <a href="https://github.com/phillipbarlow/nc-project-wk" target='_blank'>View source code</a>
+                  <a href="https://github.com/phillipbarlow/nc-project-wk" target='_blank'>View on Github</a>
               </button>
-              <button><Link to={"projects/backend-news-app"}>View more!</Link></button>
+              <button><Link to={"projects/backendnewsapp"}>View API</Link></button>
             </div>
             </div>
           </div>
@@ -95,7 +94,7 @@ export default function App() {
                   <a href="https://northcoders.com/project-phase/leedsyouaround" target='_blank'>Project page</a>
                 </button>
               <button>
-                <Link to={"https://northcoders.com/project-phase/leedsyouaround"}>View more!</Link>
+                <Link to={"https://northcoders.com/project-phase/leedsyouaround"}>View more</Link>
               </button>
               </div>
             </div>
