@@ -7,6 +7,7 @@ import Contact from './routes/Contact.jsx';
 import NewsFrontend from './routes/NewsFrontend.jsx';
 import NewsBackend from './routes/NewsBackend.jsx';
 import Projects from './routes/Projects.jsx';
+import LeedsYouAround from './routes/LeedsYouAround.jsx';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -33,12 +34,16 @@ const router = createBrowserRouter([
     element: <Projects/>,
   },
   {
-    path: "projects/frontendnewsapp",
+    path: "projects/frontendnews",
     element: <NewsFrontend />,
   },
   {
-    path: "projects/backendnewsapp",
+    path: "projects/backendnews",
     element: <NewsBackend/>,
+  },
+  {
+    path: "projects/leedsYouAround",
+    element: <LeedsYouAround/>,
   }
 ]);
 

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import {NavLink,Link} from "react-router-dom";
 
 const data = {
-  projects: ['frontend-news-app','backend-news-app', 'portfolio']
+  projects: ['frontend-news','backend-news','leedsYouAround', 'portfolio']
 };
 
 const Navigation = () => {
