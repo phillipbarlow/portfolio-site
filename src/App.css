@@ -233,6 +233,9 @@ header ul li,
   max-width: 50px;
   max-height: 50px;
 }
+.disabled{
+  background-color: red;
+}
 
 .a:hover .overlay,
 .b:hover .overlay,
