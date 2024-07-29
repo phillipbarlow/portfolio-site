@@ -40,7 +40,7 @@ export default function App() {
         <div className="projects-container">
           <p className='work-title'>Latest work</p>
           {console.log(isHoverActive)}
-          <div className= {`${isHoverActive ? 'project a' : ''}`} onClick={handleClick}>
+          <div className= 'project a'>
               <img className='project-a' src={frontendProject} alt="Frontend project called Phils news"/>
               <div className="frontend-icons">
                 <img src={html} alt="React"/>
