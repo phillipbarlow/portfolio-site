@@ -38,11 +38,23 @@ const router = createBrowserRouter([
     element: <NewsFrontend />,
   },
   {
+    path: "frontendnews",
+    element: <NewsFrontend />,
+  },
+  {
     path: "projects/backendnews",
     element: <NewsBackend/>,
   },
   {
+    path: "backendnews",
+    element: <NewsBackend/>,
+  },
+  {
     path: "projects/leedsYouAround",
+    element: <LeedsYouAround/>,
+  },
+  {
+    path: "leedsYouAround",
     element: <LeedsYouAround/>,
   }
 ]);
