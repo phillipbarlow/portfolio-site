@@ -58,6 +58,7 @@ header ul li,
   font-style: normal;
   color: #0d77b1;
 }
+
 .active {
   background-color: #0d77b1;
   color: white;
@@ -187,7 +188,6 @@ header ul li,
   font-size: 1.3em;
 }
 .latestWork-sectionContainer {
-  /* height:60vh; */
   align-items: center;
   justify-items: center;
   display: flex;
@@ -407,6 +407,22 @@ footer > nav ul li {
   font-size: 1.2em;
   font-weight: 400;
 }
+/* timeline table */
+.timeline-title{
+  align-self: flex-start;
+  width: 50%;
+  margin: 1em auto;
+}
+.timelineTable{
+  width:50%;
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+/* timeline table */
+.mailme-link{
+ margin: 50px 0px;
+}
 /* Contact */
 .contact-section {
   height: 400px;
@@ -608,7 +624,6 @@ footer > nav ul li {
     position: absolute;
     max-width: 350px;
     height:auto;
-    /* height:250px; */
     top: 30%;
     left: 50%;
     transform: translate(-50%);
@@ -761,7 +776,6 @@ footer > nav ul li {
     grid-area: 4/1 / span 1 / span 1;
   }
   .skill > img {
-    /* height: 50px; */
     max-width: 50px;
     max-height: 50px;
     flex-grow: 1;
@@ -852,6 +866,17 @@ footer > nav ul li {
   .littleBit-about,
   .littlebitMore-about {
     width: 90%;
+  }
+  .timeline-title{
+    width:90%;
+    text-align: center;
+  }
+  .timeline-content{
+    background-color: red;
+    ;
+  }
+  .timelineTable{
+    width:100%;
   }
   /* Contact */
   .contact-section {
@@ -1186,4 +1211,5 @@ a.portfolio-link {
     font-size: 6em;
     left: 10%;
   }
+  
 }

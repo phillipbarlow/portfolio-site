@@ -44,15 +44,14 @@ export default function About() {
           I like to teach our children there is more to life  than TV and YouTube.
           We also love to bake cakes.</p>
         </div>
-          <Link to="mailto:phillipbarlow10@gmail.com">Lets chat, click here!</Link>
-      </section>
+        <h2 className='timeline-title'>Timeline of progression</h2>
         <Timeline className='timelineTable'>
       <TimelineItem>
-        <TimelineSeparator>
+        <TimelineSeparator className='timeline-sep'>
           <TimelineDot />
-          <TimelineConnector />
+          <TimelineConnector className='timeline-connector' />
         </TimelineSeparator>
-        <TimelineContent>Step 1</TimelineContent>
+        <TimelineContent className='timeline-content'>Step 1</TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
@@ -68,6 +67,8 @@ export default function About() {
         <TimelineContent>Step 3</TimelineContent>
       </TimelineItem>
     </Timeline>
+          <Link className='mailme-link' to="mailto:phillipbarlow10@gmail.com">Lets chat, click here!</Link>
+      </section>
       <Footer/>
     </div>
   )
