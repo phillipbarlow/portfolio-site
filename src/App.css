@@ -906,6 +906,14 @@ footer > nav ul li {
     color: none;
     padding: none;
   }
+
+a.portfolio-link {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+
   /* Frontend page */
 
   .frontend-page p,

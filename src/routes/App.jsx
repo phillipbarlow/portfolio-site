@@ -23,14 +23,8 @@ import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import leedsYouAround from '../images/leedsYouAround.webp';
 import {Link} from "react-router-dom";
-import { useState } from 'react';
 
 export default function App() {
-  const [isHoverActive, setIsHoverActive] = useState(true);
-
-  const handleClick = () => {
-    setIsHoverActive(prevState => !prevState);
-  };
   return (
     <div className='homePage' >
       <Header/>
@@ -39,7 +33,6 @@ export default function App() {
       <section className='latestWork-sectionContainer'>
         <div className="projects-container">
           <p className='work-title'>Latest work</p>
-          {console.log(isHoverActive)}
           <div className= 'project a'>
               <img className='project-a' src={frontendProject} alt="Frontend project called Phils news"/>
               <div className="frontend-icons">

@@ -2,9 +2,15 @@ import React from 'react'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
-import { Form } from "react-router-dom";
 import {Link} from "react-router-dom";
 import profile from "../images/profile-image.webp"
+
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
 
 export default function About() {
   return (
@@ -40,6 +46,28 @@ export default function About() {
         </div>
           <Link to="mailto:phillipbarlow10@gmail.com">Lets chat, click here!</Link>
       </section>
+        <Timeline className='timelineTable'>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>Step 1</TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>Step 2</TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot />
+        </TimelineSeparator>
+        <TimelineContent>Step 3</TimelineContent>
+      </TimelineItem>
+    </Timeline>
       <Footer/>
     </div>
   )
