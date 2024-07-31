@@ -45,13 +45,15 @@ export default function About() {
           We also love to bake cakes.</p>
         </div>
         <h2 className='timeline-title'>Timeline of progression</h2>
-        <Timeline className='timelineTable'>
+        <Timeline style={{alignItems: 'flex-start'}}>
       <TimelineItem>
         <TimelineSeparator className='timeline-sep'>
           <TimelineDot />
           <TimelineConnector className='timeline-connector' />
         </TimelineSeparator>
-        <TimelineContent className='timeline-content'>Step 1</TimelineContent>
+        <TimelineContent className='timeline-content'>
+          Some content going here
+        </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>

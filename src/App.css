@@ -408,18 +408,20 @@ footer > nav ul li {
   font-weight: 400;
 }
 /* timeline table */
-.timeline-title{
+.MuiTimeline-root{
+  width:800px;
+  word-wrap: break-word;
+  margin: 50px auto;
   align-self: flex-start;
-  width: 50%;
-  margin: 1em auto;
 }
-.timelineTable{
-  width:50%;
-  display: flex;
-  align-items: flex-start;
-  margin: 0 auto;
+.MuiTypography-root{
+  height:300px;
+  /* width:1250px; */
 }
-/* timeline table */
+.MuiTimelineItem-root::before{
+  content: none !important;
+  padding: 0px !important;
+}
 .mailme-link{
  margin: 50px 0px;
 }
@@ -842,6 +844,20 @@ footer > nav ul li {
     overflow-x: hidden;
   }
   /* About */
+  .MuiTimeline-root{
+    width:200px;
+    word-wrap: break-word;
+    margin: 0px;
+    align-self: flex-start;
+  }
+  .MuiTypography-root{
+    height:300px;
+    width:250px;
+  }
+  .MuiTimelineItem-root::before{
+    content: none !important;
+    padding: 0px !important;
+  }
   .about-text {
     font-size: 3em;
     font-weight: 700;
@@ -870,14 +886,7 @@ footer > nav ul li {
   .timeline-title{
     width:90%;
     text-align: center;
-  }
-  .timeline-content{
-    background-color: red;
-    ;
-  }
-  .timelineTable{
-    width:100%;
-  }
+  };
   /* Contact */
   .contact-section {
     width: 75%;
@@ -1211,5 +1220,19 @@ a.portfolio-link {
     font-size: 6em;
     left: 10%;
   }
-  
+  /* About */
+  .MuiTimeline-root{
+    width:1200px;
+    word-wrap: break-word;
+    margin: 0px;
+    align-self: flex-start;
+  }
+  .MuiTypography-root{
+    height:300px;
+    width:1250px;
+  }
+  .MuiTimelineItem-root::before{
+    content: none !important;
+    padding: 0px !important;
+  }
 }
