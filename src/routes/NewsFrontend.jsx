@@ -10,7 +10,7 @@ export default function NewsFrontend() {
     <div>
         <section className='frontend-page'>
         <Header/>
-        <Hero headerName={`Phils news`} headerText={'frontendTextClass'}/>
+        {/* <Hero headerName={`Phils news`} headerText={'frontendTextClass'}/> */}
         <h1>Phils news frontend</h1>
         <h2 className='subHeading'>CRUD Project: Managing Data in React</h2>
         <div className="frontendImg-container">

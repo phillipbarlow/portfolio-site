@@ -8,10 +8,10 @@ export default function LeedsYouAround() {
     <div>
     <section className="leedsYouAround-page">
       <Header />
-      <Hero
+      {/* <Hero
         headerText={"lya-TextClass"}
         headerName={"LeedsYouAround"}
-      />
+      /> */}
       <h1>LeedsYouAround</h1>
       <h2 className="subHeading">Building a RESTful API in 5 Days</h2>
       <div className="backendDesktopImg">

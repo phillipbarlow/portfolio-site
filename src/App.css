@@ -117,7 +117,7 @@ header ul li,
 }
 .skills {
   height: 40vh;
-  background-color: #fafafa;
+  background-color: #f4f9fc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -622,6 +622,20 @@ footer > nav ul li {
   text-decoration: none;
 }
 @media only screen and (max-width: 600px) {
+  html{
+    font-size: 62.5%;
+    margin: 8px;
+  }
+  .hero-container{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f9fc
+  }
+  .home-image{
+    height: 300px;
+  }
   .profile-img-container {
     position: absolute;
     max-width: 350px;
@@ -631,10 +645,10 @@ footer > nav ul li {
     transform: translate(-50%);
   }
   header {
-    background-color: #000;
+    background-color: #f4f9fc;
     overflow: hidden;
-    grid-template-rows: 120px;
-    grid-template-columns: auto 1fr 100px;
+    grid-template-rows: 80px;
+    grid-template-columns: 100px repeat(2,auto);
   }
   .sub-menu-list {
     display: flex;
@@ -667,15 +681,39 @@ footer > nav ul li {
   }
   .menu-toggle {
     display: inline;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    color: #0f1b61;
+    font-weight: 700;
+    letter-spacing: 4px;
+    background: transparent;
+    /* background-color: ; */
+  }
+  .menu-toggle:before{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 26px;
+    margin-right: 26px;
+    background: #919795;
+    vertical-align: middle;
+  }
+  .hire-me{
+    display: inline;
     grid-column: 3/4;
     grid-row: 1/2;
     align-self: center;
-  }
-  .menu-toggle {
-    border: none;
     background: transparent;
-    font-size: 2em;
-    color: #fff;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    color: #0f1b61;
+    font-weight: 700;
+    letter-spacing: 4px;
   }
   .open {
     display: block;
@@ -684,7 +722,9 @@ footer > nav ul li {
   }
   .nav-links {
     position: absolute;
-    left: 0%;
+    top:100px;
+    left: 0;
+    height: 10;
     z-index: 99;
     background-color: #000;
     width: 100%;

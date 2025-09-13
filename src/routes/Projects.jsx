@@ -10,7 +10,7 @@ export default function Work() {
   return (
     <div>
       <Header/>
-      <Hero headerName={'Projects'} className={'projectsClass'} headerText={'projects-text'}/>
+      {/* <Hero headerName={'Projects'} className={'projectsClass'} headerText={'projects-text'}/> */}
       <section className='all-projects-container'>
           <img className='philsNewsFrontend-img' src={frontendProject} alt="front desktop view of phils news" />
           <div  className='philsNewsFrontend-txt'>

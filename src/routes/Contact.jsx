@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <div className='contactPage'>
       <Header/>
-      <Hero headerName={'Contact me'} className={'contact-hero'} headerText={'contact-txt'}/>
+      {/* <Hero headerName={'Contact me'} className={'contact-hero'} headerText={'contact-txt'}/> */}
       <section className='contact-section'>
         <div className="contact-container">
           <p className='connect-txt'>Let's connect</p>

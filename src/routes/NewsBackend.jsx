@@ -8,10 +8,10 @@ export default function NewsBackend() {
     <div>
       <section className="backend-page">
         <Header />
-        <Hero
+        {/* <Hero
           headerText={"backendTextClass"}
           headerName={"Phils news backend"}
-        />
+        /> */}
         <h1>Phils news backend</h1>
         <h2 className="subHeading">Building a RESTful API in 5 Days</h2>
         <div className="backendDesktopImg">
