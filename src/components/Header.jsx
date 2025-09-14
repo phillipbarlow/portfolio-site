@@ -20,13 +20,13 @@ export default function Header() {
     }
   };
 
-  useEffect(() => {
-    updateImageSrc();
-    window.addEventListener("resize", updateImageSrc);
-    return () => {
-      window.removeEventListener("resize", updateImageSrc);
-    };
-  }, []);
+useEffect(() => {
+  if (isOpen) {
+    document.body.classList.add("no-scroll");
+  } else {
+    document.body.classList.remove("no-scroll");
+  }
+}, [isOpen]);
 
   return (
     <header className={isOpen ? "headerOpen" : "headerClose"}>

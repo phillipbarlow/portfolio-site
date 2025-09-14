@@ -621,10 +621,21 @@ footer > .trademark {
     font-size: 62.5%;
     margin: 8px;
   }
+  .no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
   header {
     overflow: hidden;
     grid-template-rows: 100px;
     grid-template-columns: 100px repeat(2, auto);
+    position: fixed;
+    top: 8px; 
+    left: 8px; 
+    width: calc(100vw - 16px);
+    height: calc(100vh - 16px); 
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: none;
   }
   .headerOpen {
     background-color: #aadcec;
@@ -634,7 +645,7 @@ footer > .trademark {
     height: 100px;
   }
   .hero-container {
-    height: 400px;
+    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -735,9 +746,6 @@ footer > .trademark {
   }
   .open {
     display: block;
-    align-self: center;
-    /* min-height: 100vh; */
-    height: 100%;
   }
   nav {
     display: grid;
@@ -826,13 +834,6 @@ footer > .trademark {
     gap: 1.5em;
     height: auto;
   }
-  /* .skills-grid-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  max-width: 40%;
-  gap: 30px;
-} */
   .skill > img {
     width: 100%;
     flex-grow: 1;
