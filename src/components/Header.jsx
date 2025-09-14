@@ -11,16 +11,7 @@ export default function Header() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
-  const updateImageSrc = () => {
-    if (window.innerWidth <= 600) {
-      setImageSrc(mobilePhoneLogo);
-    } else {
-      setImageSrc(desktopLogo);
-    }
-  };
-
-useEffect(() => {
+  useEffect(() => {
   if (isOpen) {
     document.body.classList.add("no-scroll");
   } else {
@@ -28,10 +19,11 @@ useEffect(() => {
   }
 }, [isOpen]);
 
+
   return (
     <header className={isOpen ? "headerOpen" : "headerClose"}>
       <Link to="/">
-        <img src={imageSrc} alt="Home logo" />
+        <img src={mobilePhoneLogo} alt="Home logo" />
       </Link>
 
       <nav>
