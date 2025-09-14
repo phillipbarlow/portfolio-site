@@ -1,14 +1,17 @@
-import { useState,useEffect } from 'react';
-import desktopLogo from '../images/desktop-logo.png';
-import mobilePhoneLogo from '../images/mobile-logo.png';
-import Navigation from './Navigation';
-import {Link} from "react-router-dom"
+import { useState, useEffect } from "react";
+import desktopLogo from "../images/desktop-logo.png";
+import mobilePhoneLogo from "../images/mobile-logo.png";
+import Navigation from "./Navigation";
+import { Link } from "react-router-dom";
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const [imageSrc, setImageSrc] = useState('');
+  const [imageSrc, setImageSrc] = useState("");
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   const updateImageSrc = () => {
     if (window.innerWidth <= 600) {
       setImageSrc(mobilePhoneLogo);
@@ -16,28 +19,32 @@ export default function Header() {
       setImageSrc(desktopLogo);
     }
   };
+
   useEffect(() => {
     updateImageSrc();
-    window.addEventListener('resize', updateImageSrc);
+    window.addEventListener("resize", updateImageSrc);
     return () => {
-      window.removeEventListener('resize', updateImageSrc);
+      window.removeEventListener("resize", updateImageSrc);
     };
   }, []);
+
   return (
-    <>
-    <header>
-      <Link to='/'>
-      <img src={imageSrc} alt="Home logo"/>
+    <header className={isOpen ? "headerOpen" : "headerClose"}>
+      <Link to="/">
+        <img src={imageSrc} alt="Home logo" />
       </Link>
+
       <nav>
-        <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-        <Navigation/>
+        <ul className={`nav-links ${isOpen ? "open" : ""}`}>
+          <Navigation />
         </ul>
       </nav>
-      <button className="menu-toggle" onClick={toggleMenu} dangerouslySetInnerHTML={{ __html: isOpen ?'CLOSE' :'MENU' }}>
-    </button>
-    <button className='hire-me'>HIRE ME </button>
+
+      <button className="menu-toggle" onClick={toggleMenu}>
+        {isOpen ? "CLOSE" : "MENU"}
+      </button>
+
+      <button className="hire-me">HIRE ME</button>
     </header>
-    </>
-  )
+  );
 }
