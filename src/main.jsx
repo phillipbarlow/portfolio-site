@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client'
 import App from './routes/App.jsx'
 import ErrorPage from './ErrorPage.jsx';
 import About from './routes/About.jsx';
-import Contact from './routes/Contact.jsx';
 import NewsFrontend from './routes/NewsFrontend.jsx';
 import NewsBackend from './routes/NewsBackend.jsx';
 import Projects from './routes/Projects.jsx';
@@ -24,10 +23,6 @@ const router = createBrowserRouter([
   {
     path: "about",
     element: <About />,
-  },
-  {
-    path: "contact",
-    element: <Contact />,
   },
   {
     path: "projects",

@@ -28,7 +28,7 @@ export default function App() {
   return (
     <div className='homePage' >
       <Header/>
-      <Hero headerName={'Home'} intro={'Hi,I’m Phil and I am a Software Developer from Leeds.'} bio={"I am a Software Developer with a strong foundation in programming principles, problem-solving and a passion for innovation and continuous learning.I am looking for an entry-level opportunity and I am excited to embark on the next stage of my career journey."} mainImage={mainImage} className={'hero'} headerText={'home-text'}/>
+      <Hero/>
       <Skills/>
       <section className='latestWork-sectionContainer'>
         <div className="projects-container">

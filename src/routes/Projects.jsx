@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Hero from '../components/Hero';
 import frontendProject from '../images/frontend.webp'
 import backendProject from '../images/backend-project.webp'
 import leedsYouAround from '../images/leedsYouAround.webp';
@@ -10,7 +9,6 @@ export default function Work() {
   return (
     <div>
       <Header/>
-      {/* <Hero headerName={'Projects'} className={'projectsClass'} headerText={'projects-text'}/> */}
       <section className='all-projects-container'>
           <img className='philsNewsFrontend-img' src={frontendProject} alt="front desktop view of phils news" />
           <div  className='philsNewsFrontend-txt'>

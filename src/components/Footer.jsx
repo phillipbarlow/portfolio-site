@@ -1,9 +1,9 @@
 import mobileLogo from '../images/mobile-logo.png';
 import {Link} from "react-router-dom"
-export default function Footer() {
+export default function Footer({bg}) {
   return (
     <div>
-      <footer>
+      <footer style={{backgroundColor:bg}}>
         <Link to='/'>
         <img className="footerImg" src={mobileLogo} alt="logo"/>
         </Link>

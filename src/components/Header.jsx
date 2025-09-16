@@ -6,19 +6,17 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const [imageSrc, setImageSrc] = useState("");
-
+  // const [imageSrc, setImageSrc] = useState("");
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
   useEffect(() => {
-  if (isOpen) {
-    document.body.classList.add("no-scroll");
-  } else {
-    document.body.classList.remove("no-scroll");
-  }
-}, [isOpen]);
-
+    if (isOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  }, [isOpen]);
 
   return (
     <header className={isOpen ? "headerOpen" : "headerClose"}>
@@ -28,7 +26,7 @@ export default function Header() {
 
       <nav>
         <ul className={`nav-links ${isOpen ? "open" : ""}`}>
-          <Navigation />
+          <Navigation setIsOpen={setIsOpen}/>
         </ul>
       </nav>
 
