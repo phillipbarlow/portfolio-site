@@ -29,14 +29,6 @@ const router = createBrowserRouter([
     element: <Projects/>,
   },
   {
-    path: "projects/frontendnews",
-    element: <NewsFrontend />,
-  },
-  {
-    path: "frontendnews",
-    element: <NewsFrontend />,
-  },
-  {
     path: "projects/backendnews",
     element: <NewsBackend/>,
   },

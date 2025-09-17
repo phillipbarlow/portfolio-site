@@ -30,7 +30,7 @@ export default function App() {
       <Header/>
       <Hero/>
       <Skills/>
-      <section className='latestWork-sectionContainer'>
+      <section className='latestWork-wrapper'>
         <div className="projects-container">
           <p className='work-title'>Latest work</p>
           <div className= 'project a'>

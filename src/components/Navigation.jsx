@@ -18,7 +18,7 @@ const Navigation = ({setIsOpen}) => {
         </li>
         <li>
           <NavLink to={'/projects'}>
-            Work
+            Projects
           </NavLink>
         </li>
   </>
