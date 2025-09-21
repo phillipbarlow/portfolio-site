@@ -8,7 +8,7 @@ import portfolioImg from "../images/portfolioImg.webp";
 export default function Work() {
   return (
     <div>
-      <Header />
+      <Header/>
       <section className="projects-wrapper">
         <div className="philsNewsFrontend-container">
           <img

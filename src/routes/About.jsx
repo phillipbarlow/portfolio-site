@@ -2,13 +2,12 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-import profile from "../images/profile-image.webp";
 import me from "../images/Phil.webp";
 
 export default function About() {
   return (
     <>
-      <Header bg="#f7f8f9"/>
+      <Header/>
       <div className="aboutPage">
         <section className="about-main">
           <div className="img-container">
