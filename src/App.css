@@ -286,6 +286,7 @@
     height: calc(100vh - 16px);
     -webkit-overflow-scrolling: touch;
     scroll-behavior: none;
+    z-index: 99;
   }
   header img {
     max-width: 120px;
