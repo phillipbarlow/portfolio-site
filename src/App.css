@@ -514,16 +514,27 @@ nav ul {
 }
 
 @media (min-width: 768px) {
+  .about-title{
+    margin-bottom: 30px;
+  }
+  .aboutTxt-wrapper p {
+    margin-bottom: 50px;
+  }
+  .home-aboutme p,
+  .aboutme-prof > p,
+  .aboutme-pers {
+    font-size: 30px;
+    line-height: 55px;
+  }
   .home-aboutme p {
     width: 86%;
     margin: 0 auto;
-    font-size: 30px;
-    line-height: 45px;
   }
-  .home-aboutme h2 {
+  .home-aboutme h2,
+  .about-title {
     font-size: 45px;
   }
-  .skills-grid-container{
+  .skills-grid-container {
     width: 500px;
   }
   .projects-container {
@@ -531,21 +542,29 @@ nav ul {
     grid-template-rows: repeat(100px, 300px);
   }
 
-  .work-title{
+  .work-title {
     grid-area: 1/1 / span 1 / span 3;
   }
-  .a{
-grid-area: 1/1 / span 1 / span 1;
+  .a {
+    grid-area: 1/1 / span 1 / span 1;
   }
-  .b{
-grid-area: 1/2 / span 1 / span 1;
+  .b {
+    grid-area: 1/2 / span 1 / span 1;
   }
-  .c{
-grid-area: 1/3 / span 1 / span 1;
+  .c {
+    grid-area: 1/3 / span 1 / span 1;
   }
 
   /* About */
-  .img-container > img{
+  .img-container > img {
     width: 600px;
+  }
+  /* footer */
+  .footer-message{
+    font-size: 30px;
+    text-align: center;
+  }
+  footer .trademark{
+    font-size: 25px;
   }
 }
