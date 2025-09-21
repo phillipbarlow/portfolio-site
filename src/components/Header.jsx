@@ -4,9 +4,8 @@ import mobilePhoneLogo from "../images/mobile-logo.png";
 import Navigation from "./Navigation";
 import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Header({ bg }) {
   const [isOpen, setIsOpen] = useState(false);
-  // const [imageSrc, setImageSrc] = useState("");
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -19,14 +18,17 @@ export default function Header() {
   }, [isOpen]);
 
   return (
-    <header className={isOpen ? "headerOpen" : "headerClose"}>
+    <header
+      className={isOpen ? "headerOpen" : "headerClose"}
+      style={{ backgroundColor: bg }}
+    >
       <Link to="/">
         <img src={mobilePhoneLogo} alt="Home logo" />
       </Link>
 
       <nav>
         <ul className={`nav-links ${isOpen ? "open" : ""}`}>
-          <Navigation setIsOpen={setIsOpen}/>
+          <Navigation setIsOpen={setIsOpen} />
         </ul>
       </nav>
 
