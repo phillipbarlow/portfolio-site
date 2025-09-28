@@ -6,6 +6,7 @@
   font-weight: 300;
   font-style: normal;
 }
+/* mobile view*/
 
 /* flex */
 .htmlAndCss,
@@ -308,9 +309,6 @@ header {
   scroll-behavior: none;
   z-index: 99;
 }
-nav{
-  height: 100vh;
-}
 header img {
   max-width: 120px;
   width: 100%;
@@ -329,6 +327,7 @@ header ul {
   background-color: #f4f9fc;
   height: 100px;
 }
+
 .hero-container {
   height: 550px;
   justify-content: center;
@@ -507,15 +506,15 @@ nav ul {
   align-items: center;
   font-size: 1.5em;
 }
-
+/* Tablet view */
 @media (min-width: 768px) {
-  .hero-container{
+  .hero-container {
     padding-top: 200px;
   }
-  .headerClose{
+  .headerClose {
     height: 150px;
   }
-  .headerClose > button{
+  .headerClose > button {
     font-size: 20px;
   }
   .about-title {
@@ -589,8 +588,8 @@ nav ul {
     width: 600px;
   }
   /* footer */
-  footer{
-    height:150px
+  footer {
+    height: 150px;
   }
   .footer-message {
     font-size: 30px;

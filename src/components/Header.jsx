@@ -37,3 +37,4 @@ export default function Header({bg}) {
     </header>
   );
 }
+Header.prototype={bg:PropTypes.string}
