@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
-import desktopLogo from "../images/desktop-logo.png";
 import mobilePhoneLogo from "../images/mobile-logo.png";
 import Navigation from "./Navigation";
 import { Link } from "react-router-dom";
-
+import propTypes from "prop-types";
 export default function Header({bg}) {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
@@ -33,8 +32,18 @@ export default function Header({bg}) {
         {isOpen ? "CLOSE" : "MENU"}
       </button>
 
-      <button className="hire-me">HIRE ME</button>
+      <button
+  className="hire-me"
+  onClick={() => {
+    const subject = encodeURIComponent("Hi Phil");
+    const body = encodeURIComponent("Hi Phil");
+    window.location.href = `mailto:phillipbarlow10@gmail.com?subject=${subject}&body=${body}`;
+  }}
+  aria-label="Email Phil"
+>
+  HIRE ME
+</button>
     </header>
   );
 }
-Header.prototype={bg:PropTypes.string}
+Header.propTypes={bg:propTypes.string}

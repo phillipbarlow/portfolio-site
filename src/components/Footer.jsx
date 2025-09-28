@@ -1,5 +1,7 @@
 import mobileLogo from '../images/mobile-logo.png';
 import {Link} from "react-router-dom"
+import propTypes from "prop-types";
+
 export default function Footer({bg}) {
   return (
     <div>
@@ -13,3 +15,4 @@ export default function Footer({bg}) {
     </div>
   )
 }
+Footer.propTypes={bg:propTypes.string}
